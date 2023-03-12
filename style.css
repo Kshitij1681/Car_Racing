@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("images/bg_main.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.hide {
+  display: none;
+}
+
+.score {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  width: 300px;
+  line-height: 70px;
+  text-align: center;
+  background: #10ac84;
+  color: #fff;
+  font-size: 1.5em;
+  box-shadow: 0 5px 5px #777;
+  opacity: 0;
+  transition: all 0.1s linear;
+}
+
+.startScreen {
+  position: absolute;
+  background-color: #ee5253;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+  border: 1px solid #ff6b6b;
+  padding: 15px;
+  margin: auto;
+  width: 50%;
+  cursor: pointer;
+  letter-spacing: 5px;
+  font-size: 20px;
+  word-spacing: 3px;
+  line-height: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 5px #777;
+  transition: all 0.15s linear;
+}
+
+.gameArea {
+  width: 400px;
+  min-height: 100vh;
+  background-color: #2d3436;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.lines {
+  width: 10px;
+  height: 100px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.car,
+.enemy {
+  width: 50px;
+  height: 80px;
+  position: absolute;
+  bottom: 120px;
+  z-index: 1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
