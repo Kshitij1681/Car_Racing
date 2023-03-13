@@ -69,7 +69,7 @@ function moveEnemy(car) {
     }
     if (item.y >= 750) {
       item.y = -300;
-      item.style.left = `${Math.round(Math.random() * 350)}px`;
+      item.style.left = `${Math.round(Math.random() * 450)}px`;
     }
 
     item.y += player.speed;
